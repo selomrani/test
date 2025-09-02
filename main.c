@@ -1,20 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 int main(void) {
-    int Rayon = 0;
-    const double PI = 3.1415926535897;
-    float volume = 0 ;
+float amount = 0 ; 
+float tax = 0.05;
+float total = 0;
 
+printf("Enter an amount in $ : ");
+scanf("%f",&amount);
 
-    printf("Enter a value for R : ");
-    scanf("%d",&Rayon);
+total = amount + (amount * tax ) ;
 
-    volume = (4.0f / 3.0f) * PI * pow(Rayon,3);
-
-    printf("The volume of the sphere is : %f",volume);
-
-
-
+printf("Your total after tax is : $%2.f",total);
 
 return 0; 
 }
